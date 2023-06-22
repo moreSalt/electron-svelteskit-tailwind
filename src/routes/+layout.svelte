@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-
+	// import '$app.css';
 	let ready: boolean = false;
 	onMount(() => (ready = true));
 </script>
@@ -19,4 +19,7 @@
 		height: 40px;
 		width: 100%;
 	}
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
 </style>
